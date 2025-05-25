@@ -88,9 +88,9 @@
         <div class="order-details">
             <p><strong>Suas Informações:</strong></p>
             <p><strong>Email:</strong> {{  $pedido->email ?? now()->format('d/m/Y') }}</p>
-            <p><strong>Cep:</strong> R$ {{ $pedido->cep ?? 'Sem cep'  }}</p>
-            <p><strong>Estado:</strong> R$ {{ $pedido->estado ?? 'Sem estado'}}</p>
-            <p><strong>Cidade:</strong> R$ {{ $pedido->cep ?? 'Sem cidade'}}</p>
+            <p><strong>Cep:</strong> {{ $pedido->cep ?? 'Sem cep'  }}</p>
+            <p><strong>Estado:</strong> {{ $pedido->estado ?? 'Sem estado'}}</p>
+            <p><strong>Cidade:</strong> {{ $pedido->cep ?? 'Sem cidade'}}</p>
             <p><strong>Rua:</strong> {{$pedido->rua ?? "rua"}}</p>
             <p><strong>Numero:</strong> {{$pedido->numero ?? 'Sem numero'}}</p>
             <p><strong>Complemento:</strong> {{$pedido->complemento ?? 'Sem complemento'}}</p>
