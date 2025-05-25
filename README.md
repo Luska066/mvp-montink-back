@@ -18,7 +18,6 @@ Configure o Email :
 Caso rode com sail (recomendado)
     
     sail up -d
-    sail artisan migrate
 
 adicione isso ao seu .env
 
@@ -28,6 +27,10 @@ adicione isso ao seu .env
     DB_DATABASE=laravel
     DB_USERNAME=sail
     DB_PASSWORD=password
+
+    DEPOIS EXECUTE
+    
+    sail artisan migrate
 
 Caso queira rodar com artisan (Não recomendado)
     
