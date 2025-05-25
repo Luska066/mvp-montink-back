@@ -1,5 +1,10 @@
 Requisitos
 
+## Deploy
+    
+    FRONT : http://54.207.91.242:9000/
+    API : http://54.207.91.242/
+
 use o php 8.2
 
     composer install
@@ -17,6 +22,8 @@ Configure o Email :
 
 Caso rode com sail (recomendado)
     
+    vendor/bin/sail up -d
+    ou 
     sail up -d
 
 adicione isso ao seu .env
@@ -30,15 +37,13 @@ adicione isso ao seu .env
 
     DEPOIS EXECUTE
     
+    vendor/bin/sail artisan migrate
+    ou
     sail artisan migrate
 
 Caso queira rodar com artisan (Não recomendado)
     
     php artisan migrate
     php artisan serve -p : 80
-
-
-
-
 
 # mvp-montink-back
